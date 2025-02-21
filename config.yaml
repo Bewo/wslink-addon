@@ -1,7 +1,8 @@
-name: "WSLinik proxy add-on"
+name: "WSLink proxy add-on"
 description: "Create a proxy SSL for WSLink support"
 version: "0.0.1"
 slug: "wslink_proxy"
+url: "https://github.com/schizza/wslink-addon"
 init: false
 arch:
   - aarch64
