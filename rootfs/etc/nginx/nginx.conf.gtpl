@@ -40,7 +40,7 @@ http {
             return 400 "Unsupported path.";
         }
 
-        location = /data/update.php {
+        location = /data/upload.php {
             proxy_pass http://homeassistant.local.hass.io:{{ ha_port }}/data/upload.php;
             # proxy_set_header Host $http_host;
             # proxy_http_version 1.1;
