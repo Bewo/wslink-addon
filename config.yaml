@@ -1,0 +1,28 @@
+name: "WSLinik proxy add-on"
+description: "Create a proxy SSL for WSLink support"
+version: "0.0.1"
+slug: "wslink_proxy"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+
+ports:
+  443/tcp: 443
+
+options:
+  host_name: "homeassistant.local"
+  host_ip: ""
+  ha_port: 8123
+  cert_valid_for: 65535
+  auto_recreate_cert: false
+
+schema:
+  host_name: str
+  host_ip: str
+  ha_port: int
+  cert_valid_for: int
+  auto_recreate_cert: bool
