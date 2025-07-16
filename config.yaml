@@ -1,6 +1,6 @@
 name: "Bresser WSLink proxy add-on"
 description: "Create a proxy SSL for WSLink support used by Bresser Weatherstation"
-version: "0.6.1"
+version: "0.6.2"
 slug: "wslink_proxy"
 init: false
 arch:
@@ -16,7 +16,7 @@ ports:
 options:
   host_name: "homeassistant.local"
   host_ip: ""
-  ha_port: 8123
+  ha_port: 8000
   cert_valid_for: 65535
   auto_recreate_cert: false
 
